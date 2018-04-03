@@ -240,134 +240,426 @@
     </header>
     <div class="wrapper row-offcanvas row-offcanvas-left">
         <!-- Left side column. contains the logo and sidebar -->
-<aside class="left-side sidebar-offcanvas" style="background-color: rgb(84, 125, 121); min-height: 662px;">
-            <section class="sidebar ">
-                <div class="page-sidebar  sidebar-nav" style="background-color:#547d79;">
-                    <div class="clearfix"></div>
-                    <!-- BEGIN SIDEBAR MENU -->
-                    <ul class="page-sidebar-menu" id="menu">
-					<!-- Dashboard -->
-                        <li >
-                            <a href="http://localhost:8080/learning/index">
-                                <i class="livicon" data-name="home" data-size="18" data-c="#418BCA" data-hc="#418BCA" data-loop="true"></i>
-                                <span class="title">Dashboard</span>
-                            </a>
-                        </li>
-					<!-- Dashboard -->
-					<!-- System Setup -->
+       <aside class="left-side sidebar-offcanvas offcanvas-left" style="background-color:#515763;">
+   <section class="sidebar">
+      <div class="page-sidebar  sidebar-nav">
+         <div class="clearfix">
+         </div>
+         &nbsp;
+         <div style="padding-left:75px">
+          <img src="<c:url value="/resources/img/pic1.png"/>"  class="img-responsive img-circle" width="100px" height="100px" alt="logo">
+            
+            <h5 class="topprofiletext" style="color:white; padding-left:45px;">Jose Mari</h5>
+            <p>
+               <span class="topprofiletext" style="color:white; font-size:11px; padding-left:35px;">Super Admin</span>
+         </div>
+         &nbsp;
+         <!-- BEGIN SIDEBAR MENU -->
+         <ul id="menu" class="page-sidebar-menu">
+            <li class="active">
+               <a href="">
+               <i  class="livicon"  data-name="gears" data-size="18" data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
+               <span class="title">System Configuration</span>
+               <span class="fa arrow"></span>
+               </a>
+               <ul class="sub-menu">
+                  <li class="active">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Human Resource</span>
+                     </a>
+                     <ul class="sub-menu">
                         <li>
-                            <a href="#">
-                                <i class="livicon" data-name="doc-portrait" data-size="18" data-c="#00bc8c" data-hc="#00bc8c" data-loop="true"></i>
-                                <span class="title">System Setup</span>
-                                <span class="fa arrow"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="http://localhost:8080/learning/courses">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        Course
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://localhost:8080/learning/courses category">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        Course Category
-                                    </a>
-                                </li>
-								<li>
-                                    <a href="http://localhost:8080/learning/employee">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        Employee
-                                    </a>
-                                </li>
-                            </ul>
+                           <a href="http://localhost:8080/learning/courses">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Course</span>
+                           </a>
                         </li>
-						<!-- System Setup -->
-					
-						<!-- Queries -->
                         <li>
-                            <a href="#">
-                                <i class="livicon" data-name="table" data-size="18" data-c="#EF6F6C" data-hc="#EF6F6C" data-loop="true"></i>
-                                <span class="title">Queries</span>
-                                <span class="fa arrow"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="http://localhost:8080/learning/list course">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        List of Course
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://localhost:8080/learning/list courses category">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        List of Course Category
-                                    </a>
-                                </li>
-								<li>
-                                    <a href="http://localhost:8080/learning/list employee">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        List of Employee
-                                    </a>
-                                </li>
-								<li>
-                                    <a href="http://localhost:8080/learning/list user">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        List of User
-                                    </a>
-                                </li>
-                            </ul>
+                           <a href="http://localhost:8080/learning/courses category">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Course Category</span>
+                           </a>
                         </li>
-						<!-- Queries -->
-						<!-- User Management -->
                         <li>
-                            <a href="http://localhost:8080/learning/user management">
-                                <i class="livicon" data-name="users" data-size="18" data-c="#F89A14" data-hc="#F89A14" data-loop="true"></i>
-                                <span class="title">User Management</span>
-                            </a>
+                           <a href="http://localhost:8080/learning/list course">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">List of Course</span>
+                           </a>
                         </li>
-					<!-- User Management -->
-					<!-- Reports -->
                         <li>
-                            <a href="#">
-                                <i class="livicon" data-name="barchart" data-size="18" data-c="#ff00ff" data-hc="#ff00ff" data-loop="true"></i>
-                                <span class="title">Reports</span>
-                                <span class="fa arrow"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="http://localhost:8080/learning/enrollment">
-                                        <i class="fa fa-angle-double-right"></i>
-                                        Enrollment
-                                    </a>
-                                </li>
-                              
-                            </ul>
+                           <a href="http://localhost:8080/learning/list courses category">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">List of Course Category</span>
+                           </a>
                         </li>
-						<!-- Reports -->
-						<!-- Utilities -->
+                        <li class="">
+                           <a href="http://localhost:8080/learning/list user">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">List of Users</span>
+                           </a>
+                        </li>
+                        <li class="active">
+                           <a href="http://localhost:8080/learning/enrollment">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Enrollment</span>
+                           </a>
+                        </li>
                         <li>
-                            <a href="#">
-                                <i class="livicon" data-name="gears" data-size="18" data-c="#cfda08" data-hc="#cfda08" data-loop="true"></i>
-                                <span class="title">Utilities</span>
-                                <span class="fa arrow"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="list course.html">
-                                        <i class="fa fa-angle-double-right"></i>
-                                         Backup Database
-                                    </a>
-                                </li>
-                          
-                            </ul>
+                           <a href="http://localhost:8080/learning/user management">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">User Management</span>
+                           </a>
                         </li>
-						<!-- Utilities -->
-						
                      </ul>
-                </div>
-				</section>
-        </aside>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li>
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Logistics</span>
+                     </a>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li>
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Financials</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <a href="">
+               <i class="livicon"  data-name="settings" data-size="18" data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
+               <span class="title">User Management</span>
+               </a>
+            </li>
+            <li>
+               <a href="">
+               <i class="livicon" data-name="printer" data-size="18" data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
+               <span class="title">Reports</span>
+               </a>
+            </li>
+            <br>
+
+            <li>
+               <a>
+               <i class="livicon" data-name="truck" data-size="18"  data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
+               <span class="title">Logistics</span>
+               <span class="fa arrow"></span>
+               </a>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Procurement</span>
+                     </a>
+                     <ul class = "sub-menu">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Purchase Request Form</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Purchase Order Form</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Approved Purchase Request</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Request Form Quotation</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Bids</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Notice of Awards</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Warehouse Management</span>
+                     </a>
+                     <ul class = "sub-menu">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Items</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Delivery</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="ss_users.html">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Asset Management</span>
+                     </a>
+                     <ul class = "sub-menu">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Acquisition</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Maintenance Work Order</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Transfer</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Disposal</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Retirement</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Queries</span>
+                     </a>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="ss_users.html">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Reports</span>
+                     </a>
+                     <ul class = "sub-menu">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Purchase Request</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Purchase Order</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Fast-Moving Items</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Slowing-Moving Items</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Item History</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Acquisition Summary</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Work Order Summary</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Transfer Summary</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Disposal Summary</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Retirement Summary</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <a href="">
+               <i class="livicon" data-name="money" data-size="18"  data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
+               <span class="title">Financials</span>
+               <span class="fa arrow"></span>
+               </a>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Journal Entry Voucher</span>
+                     </a>
+                     <ul class = "sub-menu">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Create JEV</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Review JEV</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Collections</span>
+                     </a>
+                     <ul class = "sub-menu">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Accounts Receivable</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Collection</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Disbursement</span>
+                     </a>
+                     <ul class = "sub-menu">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Accounts Payable</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Disbursement</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Queries</span>
+                     </a>
+                  </li>
+               </ul>
+               <ul class="sub-menu">
+                  <li class="">
+                     <a href="">
+                     <i class="fa fa-angle-double-right"></i>
+                     <span class="title">Reports</span>
+                     </a>
+                     <ul class="sub-menu">
+                        <li class="">
+                           <a href="">
+                           <i class="fa fa-angle-double-right"></i>
+                           <span class="title">Trial Balance</span>
+                           </a>
+                           <ul class = "sub-menu">
+                              <li>
+                                 <a href="">
+                                 <i class="fa fa-angle-double-right"></i>
+                                 <span class="title">Unadjasted Trial Balance</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 <i class="fa fa-angle-double-right"></i>
+                                 <span class="title">Pre-Closing Trial Balance</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                 <i class="fa fa-angle-double-right"></i>
+                                 <span class="title">Post-Closing Trial Balance</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <!-- END SIDEBAR MENU -->
+      </div>
+   </section>
+</aside>    
         <!-- Right side column. Contains the navbar and content of the page -->
         <aside class="right-side">
             <!-- Content Header (Page header) -->
@@ -376,7 +668,7 @@
             </section>			
         	
                         <!-- Tables -->
-                        <a type="submit" class="btn btn-primary" href="http://127.0.0.1:58979/viewer/frameset?__report=C%3A%5CProgram+Files%5Cbirt%5Cworkspace%5CLMS_DB.rptdesign&__format=html&__svg=true&__locale=en_US&__timezone=Singapore&__masterpage=true&__rtl=false&__cubememsize=10&__resourceFolder=C%3A%5CProgram+Files%5Cbirt%5Cworkspace&-71979662" style="margin-left:940px; margin-bottom:10px;">Generate Report</a>
+                        <a type="button" class="btn btn-primary" href="http://127.0.0.1:49527/viewer/frameset?__report=C%3A%5CProgram+Files%5Cbirt%5Cworkspace%5CLMS_DB.rptdesign&__format=html&__svg=true&__locale=en_US&__timezone=Singapore&__masterpage=true&__rtl=false&__cubememsize=10&__resourceFolder=C%3A%5CProgram+Files%5Cbirt%5Cworkspace&288178743" style="margin-left:940px; margin-bottom:10px;">Generate Report</a>
                      <div class="col-md-6">
                         <div class="panel panel-success">
                             <div class="panel-heading">
@@ -394,8 +686,9 @@
                                                 <th>Middle Name</th>
                                                 <th>Last Name</th>
                                                 <th>Course Name</th>    
+                                                <th>Status</th>    
                                                                                       
-												<th></th>
+												<th>Action</th>
 												
                                             </tr>
                                         </thead>
@@ -409,7 +702,8 @@
 			                                            <td>${q.emp_fname }</td>	
 			                                            <td>${q.emp_mname }</td>
 			                                            <td>${q.emp_lname }</td>
-			                                            <td>${q.course_name }</td>		
+			                                            <td>${q.course_name }</td>	
+			                                            <td>${q.emp_c_e_status }</td>	
 			                                                                	
 			                                           <td>
                                                <button class="btn btn-success"  > Edit</button>	
@@ -524,9 +818,10 @@
     <script src="<c:url value="/resources/vendors/modal/js/classie.js"/>"></script>
     <script src="<c:url value="/resources/vendors/modal/js/modalEffects.js"/>"> </script>
     <!-- end of page level js -->
-    <script>
- 
-      
-      </script>
+ <script type="text/javascript">
+           function myFunction() {
+            document.getElementById("test").innerHTML = "<iframe src=\"http://localhost:8080/Sample_Birt_viewer/frameset?__report=test.rptdesign&amp;sample=my+parameter\" height=400 width=700></iframe>"
+           }
+        </script>
 </body>
 </html>

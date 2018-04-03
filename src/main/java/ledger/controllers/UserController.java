@@ -17,6 +17,7 @@ import ledger.dao.EmployeeDao;
 import ledger.dao.EnrollmentDao;
 import ledger.dao.IndexDao;
 import ledger.dao.IndexEDao;
+import ledger.dao.LoginDao;
 import ledger.dao.UsersDao;
 import ledger.model.CourseCategoryModel;
 import ledger.model.CourseModel;
@@ -49,6 +50,9 @@ public class UserController {
 	
 	@Autowired
 	private IndexEDao indexeDao;
+	
+	@Autowired
+	private LoginDao loginDao;
 	
 	@RequestMapping("/indexE")
 	public ModelAndView indexE() {
@@ -93,6 +97,15 @@ public class UserController {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("progressE");
 		mav.addObject("progressE", "Watanays Attribute!");
+
+		return mav;
+	}
+	
+	@RequestMapping("/login")
+	public ModelAndView login() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("login");
+		mav.addObject("login", "Watanays Attribute!");
 
 		return mav;
 	}
@@ -145,78 +158,6 @@ public class UserController {
 	}
 	
 
-	@RequestMapping("/dashboard")
-	public ModelAndView dashboard() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("Dashboard");
-		mav.addObject("Dashboard", "Watanays Attribute!");
-
-		return mav;
-	}
-	@RequestMapping("/general")
-	public ModelAndView general() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("GeneralSetup");
-		mav.addObject("GeneralSetup", "Watanays Attribute!");
-
-		return mav;
-	}
-	@RequestMapping("/core")
-	public ModelAndView core() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("Core");
-		mav.addObject("Core", "Watanays Attribute!");
-
-		return mav;
-	}
-	@RequestMapping("/leadership")
-	public ModelAndView leadership() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("Leadership");
-		mav.addObject("Leadership", "Watanays Attribute!");
-
-		return mav;
-	}
-	@RequestMapping("/functional")
-	public ModelAndView functional() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("Functional");
-		mav.addObject("Functional", "Watanays Attribute!");
-
-		return mav;
-	}
-	@RequestMapping("/job")
-	public ModelAndView job() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("JobDefinition");
-		mav.addObject("JobDefinition", "Watanays Attribute!");
-
-		return mav;
-	}
-	@RequestMapping("/competency")
-	public ModelAndView competency() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("CompetencyDefinition");
-		mav.addObject("CompetencyDefinition", "Watanays Attribute!");
-
-		return mav;
-	}
-	@RequestMapping("/evaluation")
-	public ModelAndView evaluation() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("Evaluation");
-		mav.addObject("Evaluation", "Watanays Attribute!");
-
-		return mav;
-	}
-	@RequestMapping("/evaluation-employee")
-	public ModelAndView evaluationemployee() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("EvaluationEmployee");
-		mav.addObject("EvaluationEmployee", "Watanays Attribute!");
-
-		return mav;
-	}
 
 	
 	@RequestMapping("courses")

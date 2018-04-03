@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Form Examples | Josh Admin Template</title>
+    <title>Form Examples | Courses</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -239,44 +239,45 @@
     </header>
     <div class="wrapper row-offcanvas row-offcanvas-left">
         <!-- Left side column. contains the logo and sidebar -->
-        <aside class="left-side sidebar-offcanvas" style="background-color: rgb(84, 125, 121); min-height: 662px;">
-            <section class="sidebar ">
-                <div class="page-sidebar  sidebar-nav" style="background-color:#547d79;">
-                    
-                    <div class="clearfix"></div>
-                                <!-- BEGIN SIDEBAR MENU -->
-                    <ul class="page-sidebar-menu" id="menu">
-					<!-- Dashboard -->
-                        <li>
-                            <a href="http://localhost:8080/learning/indexE">
-                                <i class="livicon" data-name="home" data-size="18" data-c="#418BCA" data-hc="#418BCA" data-loop="true"></i>
-                                <span class="title">Dashboard</span>
-                            </a>
-                        </li>
-					<!-- Dashboard -->
-					<!-- Course -->
-					 <li>
-                            <a href="http://localhost:8080/learning/coursesE">
-                                <i class="livicon" data-name="doc-portrait" data-size="18" data-c="#EF6F6C" data-hc="#EF6F6C" data-loop="true"></i>
-                                <span class="title">Courses</span>
-                            </a>
-                        </li>
-						<!-- System Setup -->
-						<!-- Queries -->
-                         <li>
-                            <a href="http://localhost:8080/learning/progressE">
-                                <i class="livicon" data-name="barchart" data-size="18" data-c="#f79a14" data-hc="#f79a14" data-loop="true"></i>
-                                <span class="title">Progress</span>
-                            </a>
-                        </li>
-						<!-- Queries -->
-						
-                     </ul>
-                    <!-- END SIDEBAR MENU -->
-                     </ul>
-                </div>
-            </section>
-        </aside>
+         <aside class="left-side sidebar-offcanvas offcanvas-left" style="background-color:#515763;">
+   <section class="sidebar">
+      <div class="page-sidebar  sidebar-nav">
+         <div class="clearfix">
+         </div>
+         &nbsp;
+         <div style="padding-left:75px">
+          <img src="<c:url value="/resources/img/pic1.png"/>"  class="img-responsive img-circle" width="100px" height="100px" alt="logo">
+            
+            <h5 class="topprofiletext" style="color:white; padding-left:45px;">Jose Mari</h5>
+            <p>
+               <span class="topprofiletext" style="color:white; font-size:11px; padding-left:35px;">Super Admin</span>
+         </div>
+         &nbsp;
+         <!-- BEGIN SIDEBAR MENU -->
+         <ul id="menu" class="page-sidebar-menu">
+            <li >
+               <a href="http://localhost:8080/learning/indexE">
+               <i class="livicon"  data-name="settings" data-size="18" data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
+               <span class="title">Dashboard</span>
+               </a>
+            </li>
+            <li class="active">
+               <a href="http://localhost:8080/learning/coursesE">
+               <i class="livicon"  data-name="doc-portrait" data-size="18" data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
+               <span class="title">Courses</span>
+               </a>
+            </li>
+             <li>
+               <a href="http://localhost:8080/learning/progressE">
+               <i class="livicon"  data-name="printer" data-size="18" data-c="#ffffff" data-hc="#ffffff" data-loop="true"></i>
+               <span class="title">Progress</span>
+               </a>
+            </li>
+         </ul>
+         <!-- END SIDEBAR MENU -->
+      </div>
+   </section>
+</aside>
         <!-- Right side column. Contains the navbar and content of the page -->
         <aside class="right-side">
             <!-- Content Header (Page header) -->

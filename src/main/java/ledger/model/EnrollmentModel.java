@@ -12,6 +12,7 @@ public class EnrollmentModel {
 	private String  emp_lname;
 	private int  course_id;
 	private String course_name;
+	private String emp_c_e_status;
 	
 	
 	public int getEmp_c_e_id() {
@@ -77,6 +78,12 @@ public class EnrollmentModel {
 	}
 	public void setEmp_fname(String emp_fname) {
 		this.emp_fname = emp_fname;
+	}
+	public String getEmp_c_e_status() {
+		return emp_c_e_status;
+	}
+	public void setEmp_c_e_status(String emp_c_e_status) {
+		this.emp_c_e_status = emp_c_e_status;
 	}
 	
 	

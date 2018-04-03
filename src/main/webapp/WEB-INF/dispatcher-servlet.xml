@@ -84,6 +84,11 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
         <property name="template" ref="jt"></property>
     </bean>
     
+     <!-- DAO auto-wired -->
+    <bean id="loginDao" class="ledger.dao.LoginDao">
+        <property name="template" ref="jt"></property>
+    </bean>
+    
     
     
 
